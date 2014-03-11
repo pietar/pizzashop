@@ -6,6 +6,7 @@ require_once("exceptions/prodexception.class.php");
 //
 // Check auth_level, if auth_level 0 common user, otherwise admin user
 //
+// dit is een wijziging van ctrl_mag_weg.php om git uit te testen
 if (isset($_COOKIE["aangemeld"])) {
     $auth_level = GebruikerinfoService::Get_Gebr_Level_User($_COOKIE["aangemeld"]);
     if ($auth_level == 0) {
